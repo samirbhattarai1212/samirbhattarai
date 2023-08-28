@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query Demo</title>
+    <style>
+        body {
+            font-weight: 500;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0; /* Remove default margin */
+            padding: 0;
+            font-size: 1.2em;
+        }
+
+        .container {
+            margin: 10px;
+            padding: 7px;
+        }
+
+        h1 {
+            margin: 10px;
+        }
+
+        figure {
+            border: 10px solid black;
+            display: inline-block;
+            margin:0;
+            margin-bottom: 3px;
+            margin-left: 3px;
+            border-radius: 3px;
+        }
+
+        img {
+           width: 100%;
+           height:300px;
+            display: block; 
+        }
+
+        figcaption {
+            border: 5px solid black;
+            background-color: black;
+            color: white;
+           
+            text-align: center; 
+        }
+
+        @media screen and (min-width: 794px) {
+            body {
+                background-color: rgba(0, 0, 255, 0.2);
+            }
+                figure{
+                    width: 45%;
+                }
+           
+        }
+
+        @media screen and (min-width: 1024px) {
+            body {
+                background-color: rgba(0, 255, 0, 0.2);
+
+            }
+            figure{width:30%}
+
+           
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Media Query Demo</h1>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem nam et quos quisquam pariatur. Ut ab, aperiam totam soluta possimus quas ipsam tempora. Non magni consequuntur consectetur corrupti eum animi?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa dolorem, pariatur perspiciatis fugiat illum magnam excepturi! Dolorem, ipsam eaque accusamus eveniet, rerum totam repudiandae recusandae nam numquam minima, molestias nihil.
+    </div>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam molestiae optio pariatur quibusdam fuga nulla sit cumque, neque tempora iusto voluptatibus doloribus possimus. Eaque, recusandae? Nihil, laboriosam quaerat! Dolore, sed!
+    </div></div>
+    <h1>Box Columns</h1>
+    <figure>
+        <img src="cat.png" >
+        <figcaption>Birallo</figcaption>
+    </figure>
+    <figure>
+        <img src="naruto.jpg" >
+        <figcaption>Birallo</figcaption>
+    </figure>
+    <figure>
+        <img src="cat.png" >
+        <figcaption>Birallo</figcaption>
+    </figure>
+    <figure>
+        <img src="naruto.jpg" >
+        <figcaption>Birallo</figcaption>
+    </figure>
+    <figure>
+        <img src="cat.png" >
+        <figcaption>Birallo</figcaption>
+    </figure>
+
+</body>
+</html>
